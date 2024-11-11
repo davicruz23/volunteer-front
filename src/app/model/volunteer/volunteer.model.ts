@@ -1,5 +1,7 @@
 import { Organization } from "../organization/organization.model"
+import { Application } from "../application/application.model";
 import { HasId } from "../upsert-content.model";
+import { Opportunity } from "../opportunity/opportunity.model";
 
 export class Volunteer extends HasId{
     name: String;

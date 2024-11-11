@@ -1,5 +1,6 @@
 import { HasId } from "../upsert-content.model";
 import { Volunteer } from "../volunteer/volunteer.model";
+import { Opportunity } from "../opportunity/opportunity.model";
 
 export class Organization extends HasId{
     name: String;
@@ -18,12 +19,14 @@ export class Organization extends HasId{
         contactPhone: String,
         location: String,
         webSite: String,
-        volunteers: Volunteer[] = []
+        volunteers: Volunteer[] = [],
         opportunities: Opportunity[] = [],
+        id: number = 0
 
     ){
         super();
 
+        this.id;
         this.name = name;
         this.description = description;
         this.contactEmail = contactEmail;
